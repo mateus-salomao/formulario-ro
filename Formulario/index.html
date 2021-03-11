@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" />
+    <title>RO - Formulario de soluções</title>
+</head>
+<body>
+        
+        <header>
+
+        </header>
+
+        <form class="Formulario" action="enviado.html" method="post">
+
+           <img src="logo_reis.png" alt="logo da empresa" width="100%">
+            
+            <div class="field">
+                <input type="text" name="razao social" placeholder="Razao social do cliente final" required="" ><br>
+            </div>
+            <div class="field">
+                <input type="number" name="CNPJ" placeholder="Digite seu CNPJ" required=""><br>
+            </div>
+            <div class="field-s">
+                <label for="solucao">Escolha a solução</label><br>
+                <select id="solucao" required="">
+                    <option value="Follow Me">Follow Me</option>
+                    <option value="Arquivo Digital">Arquivo Digital</option>
+                    <option value="Reembolso">Reembolso</option>
+                </select><br>
+            </div>
+            <div class="field-s">
+                <label for="Fabricante">Fabricante</label><br>
+                <select id="Fabricante" required="">
+                    <option value="Brother">Brother</option>
+                    <option value="Kyocera">Kyocera</option>
+                    <option value="Outros">Outros</option>
+                </select><br>
+            </div>
+            <div class="field-s">
+                <label for="plataforma">Equipamentos Brother e/ou Kyocera compatíveis com BSI e/ou HyPAS?</label><br>
+                <select id="Plataforma" required="">
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select><br>
+            </div>
+            <div class="field">
+                <input type="text" name="Nº serie" placeholder="Nº serial por equipamento separado por virgula" required=""><br>
+            </div>
+            
+
+            <h4>Responda abaixo apenas para o Follow Me</h4>
+
+            <div class="field-s">
+                <label for="driver">Todos os drivers dos equipamentos estão centralizados em uma máquina (servidor)?</label><br>
+                <select id="driver" required="">
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select><br>
+            </div>
+            <div class="field-s">
+                <label for="ambiente">Servidor de Impressão, Windows Server 2008 R2 ou superior?</label><br>
+                <select id="ambiente" required="">
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select><br>
+            </div>
+            <div class="field-s">
+                <label for="Windows10">Quantidade de computadores no local menor/igual que 10 (Se sim pode instalar no Windows 10)</label><br>
+                <select id="Windows10" required="">
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select><br>
+            </div>
+            <div class="field-s">
+                <label for=".net">Servidor possui .NET Framework com versão 4.5.2 ou superior?</label><br>
+                <select id=".net" required="">
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select><br>
+            </div>
+            <div class="field-s">
+            <label for="ad">Servidor possui Active Directory (AD)? (Recomendado).</label><br>
+            <select id="ad">
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select><br>
+            </div>
+            <div class="field-s">
+                <label for="ad+">No AD cada empregado tem um usuário e divididos por departamentos/setores?</label><br>
+                <select id="ad+" required="">
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select><br>
+            </div>
+            <div class="field-s">
+                <label for="printM">Serviço "Print Management" (Gerenciador de Impressão) ativado no servidor?</label><br>
+                <select id="printM" required="">
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select><br>
+            </div>
+            <div class="field-s">
+            <label for="navegador">Google Chrome ou Firefox instalado no servidor?</label><br>
+            <select id="navegador" required="">
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select><br>
+            </div>
+            <div class="field-s">
+                <label for="firewall">Utiliza Firewall no servidor?</label><br>
+                <select id="firewall" required="">
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select><br>
+            </div>
+            <div class="field-s">
+                <label for="firewallP">No firewall exceções de entrada e saída criadas utilizando a porta 33052?</label><br>
+                <select id="firewallP" required="">
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select><br>
+            </div>
+            <div class="field-s">
+                <label for="Proxy">Utiliza Servidor Proxy?</label><br>
+                <select id="Proxy" required="">
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select><br>
+            </div>
+            <div class="field-s">
+                <label for="usuario">Computadores de usuário final utilizam sistema operacional Windows?</label><br>
+                <select id="usuario" required="">
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select><br>
+            </div>
+            <div class="field" >
+                <input type="text" name="opcional" placeholder="Obersavões a parte?" required=""><br>
+            </div>
+            <div class="field">
+                <input type="text" name="contato" placeholder="Contato com (E-mail - Tel)" required=""><br>
+            </div>
+            <div>
+                <input type="submit" value="Enviar Formulário"required="">
+            </div>
+          
+            
+        </form>
+    
+
+        
+</body>
+</html>
